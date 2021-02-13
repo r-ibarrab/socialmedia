@@ -1,0 +1,32 @@
+header {
+  min-width: 470px;
+  width: 60%;
+  height: 17%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.header-title {
+  font-size: 3rem;
+}
+.header-name {
+  font-weight: 400;
+}
+.profile-picture {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: blue;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    width: 100%;
+    min-width: 350px;
+    height: 13%;
+    margin-bottom: 20px;
+  }
+}

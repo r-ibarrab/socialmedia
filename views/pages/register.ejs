@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+
+        <form name="register-form">
+           <%- include ("../partials/input.ejs",{name:"username",label:"Username",placeholder:"username123",type:"text"})%>
+           <%- include ("../partials/input.ejs",{name:"password",label:"Password",placeholder:"******",type:"password"})%>
+           <%- include ("../partials/input.ejs",{name:"confirm-password",label:"Confirm Password",placeholder:"******",type:"password"})%>
+
+
+        </form>
+
+    </section>
+</body>
+</html>

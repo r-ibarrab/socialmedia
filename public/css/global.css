@@ -1,0 +1,49 @@
+:root {
+  font-size: 15px;
+
+  font-family: 'Manrope', sans-serif;
+  --main-color: #2c1669;
+  --off-white: #fdfdfd;
+  --secondary-color: #9d66a3;
+  --gray-borders: rgba(80, 80, 80, 0.282);
+  --text-color: rgba(80, 80, 80, 0.852);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+hr {
+  height: 3px;
+  margin: 15px 0;
+  border-width: 0;
+  background-color: var(--gray-borders);
+}
+main {
+  background-color: var(--off-white);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0px 8%;
+}
+.material-icons {
+  font-display: block;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    display: block;
+  }
+  main {
+    padding: 0px 3%;
+  }
+}

@@ -1,0 +1,123 @@
+aside {
+  height: 100vh;
+  min-width: 190px;
+  width: 20%;
+  overflow: hidden;
+  display: flex;
+  padding: 25px 0 0 0;
+  background-color: var(--off-white);
+  flex-direction: column;
+  align-items: center;
+  border-right: 3px solid var(--gray-borders);
+  transition: all 0.5s ease-out;
+}
+.sidebar-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  padding-left: 20%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logocontent {
+  display: flex;
+  align-items: center;
+}
+.CTM {
+  margin-left: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+.aside-options {
+  width: 100%;
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.option-container {
+  padding: 10px 14px;
+  margin: 5px 0;
+  transition: background-color 0.5s ease;
+  border-radius: 10px;
+  width: 90%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+/* hover options*/
+.option-container:hover {
+  background-color: var(--main-color);
+}
+.option-container:hover .aside--option {
+  color: white;
+}
+.option-container:hover i {
+  color: white;
+}
+
+/* options text */
+.aside--option {
+  color: var(--text-color);
+  font-weight: 600;
+  transition: color 0.5s ease;
+}
+
+/* icons */
+i {
+  cursor: pointer;
+  margin-right: 10px;
+  color: var(--text-color);
+  transition: color 0.5s ease;
+}
+.line {
+  width: 85%;
+  border-top: 3px solid var(--gray-borders);
+}
+.extra-opt {
+  padding: 8px 14px;
+  margin: 2px;
+}
+.extra-opt:hover {
+  background-color: var(--text-color);
+}
+
+.opened {
+  height: 100vh;
+}
+.menu-expand {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  aside {
+    height: 100px;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid var(--gray-borders);
+    padding: 30px 10px;
+  }
+  .logo {
+    height: 40px;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
+
+    justify-content: space-between;
+    transition: all 0.5s ease;
+  }
+  .menu-expand {
+    display: block !important;
+  }
+}

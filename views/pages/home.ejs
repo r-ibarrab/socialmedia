@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/partials/post.css">
+    <link rel="stylesheet" href="./css/pages/home.css">
+    <title>Document</title>
+    <%- include("../partials/global") %>
+
+</head>
+<body>
+    <%- include("../partials/sidebar") %>
+    <main>
+    <%- include("../partials/header",{title:"Feed",name:"Roberto"}) %>
+   <div class="posts-container">
+        <div class="posts-wrapper" >
+            <% for(let c=0;c<posts.length;c++){ %>
+                <%- include("../partials/post",{name:posts[c].user,content:posts[c].data,number:posts[c].number}) %>
+                
+            <% } %>
+        </div>
+        <div id="cuadro-carga" ></div>
+   </div>
+    </main> 
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+</html>
